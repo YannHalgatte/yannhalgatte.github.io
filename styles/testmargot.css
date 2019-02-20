@@ -1,0 +1,76 @@
+@font-face {
+font-family: "sf pro";
+src: url("../fonts/SF-Pro-Display-Thin.otf");
+}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  font-family:'Arial'sans-serif;
+  font-size: 16px;
+  color: #444;
+  height: 2000px;
+  background-color: #F2F2F2;
+}
+header {
+  position:fixed;
+  width: 100%;
+
+}
+
+.headerNavMenu {
+  display:flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  flex-direction: row;
+  margin:0 auto;
+  background-color: #313131;
+  margin: 0 auto;
+  padding: 13px;
+}
+.headerNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.headerlink {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-family: sf pro;
+  font-size: 0.8rem;
+  padding: 0px 20px 0px 20px;
+}
+
+img{
+  width:20px;
+  height:20px;
+  margin: 0 auto;
+  padding: 0;
+}
+header + div {
+  display: flex;
+  flex-direction: row;
+}
+#homePod {
+  font-size: 1rem;
+  font-weight: bold;
+}
+#HeaderAcheter {
+  background-color: #0070C9;
+  border-radius: 25%;
+  padding: 6px 0px 6px 0px;
+}
+
+.sectionCaracteristic {
+  background-color: #42A1EC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
