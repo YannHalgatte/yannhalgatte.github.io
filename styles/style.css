@@ -1,11 +1,13 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: "SF Pro Text","SF Pro Display","Helvetica", "Arial", sans-serif;
   font-size: 17px;
   color:#111;
   background: #f1f1f1;
+  transition:all ease-out .5s 0s;
 }
+
 
 .logo_group{
   display: flex;
@@ -23,12 +25,12 @@ header#header{
 }
 
 .container{
-  width: 1050px;
+  width: 70vw;
   margin: 0 auto;
 }
 
 #header .container{
-  width: 976px;
+  width: 80vw;
   margin: 0 auto;
   
 }
@@ -108,7 +110,15 @@ img.shopping_bag:hover{
 /* LANDING PAGE */
 section#main .landing_Page{
   text-align: center; 
+  position: relative;
 }
+span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
 
 section#main .landing_Page .landing_Image{
   display: flex;
@@ -182,7 +192,7 @@ section#main .landing_Page h3{
   0%{
     width: 60%;
     height: 60%;
-    transform: rotate(0deg)
+
   }
   50%{
     transform: translateX(0);
@@ -211,6 +221,21 @@ section#main .landing_Page h3{
     transform: translateX(200px);
   }
 }  
+/* DESCRIPTION DU HOMEPOD */
+
+.background_homepod_levitation{
+  background: url(../images/levite.png);
+  background-position: center;
+  height: 80vh;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.background_homepod_levitation:hover{
+  opacity: 0.8;
+  transition: 0.5s ease-in;
+  cursor: scroll;
+}
 
 section.descriptif{
   margin-top:100px;
@@ -239,12 +264,304 @@ section.descriptif .caracteristics{
 }
 
 section.descriptif .caracteristics h2{
-  position: sticky;
   font-size: 3em;
 }
 
 section.descriptif .caracteristics img{
-  width: 500px;
+  width: 50%;
   height: auto;
   opacity: 0.6;
+}
+
+section.descriptif .inside_homepod{
+  background: url(../images/inside.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center ;
+  height: 600vh;
+  
+}
+
+section.descriptif .inside_homepod article{
+  width: 28%;
+  text-align: center;
+  background: #111111e1;
+  border-radius: 5px;
+  padding: 30px 20px;
+  margin: 30px;
+  color: #f1f1f1;
+  transform: translateY(50%);
+  margin: 100vh auto;
+}
+
+
+section.descriptif .inside_homepod article p{
+  font-size: 0.7em;
+}
+
+.home_homepod{
+  margin: 50px auto;
+}
+
+.home_homepod article{
+  text-align: center;
+  width: 60%;
+  margin: 100px auto;
+}
+.home_homepod article h2{
+  font-size: 3em;
+}
+.home_homepod article p{
+  font-weight: 600;
+  color: #111111;
+}
+
+/* APPLE MUSIC */
+.apple_music article{
+  text-align: center;
+  width: 50%;
+  margin: 100px auto;
+}
+
+.apple_music article h2{
+  font-size: 3em;
+}
+.apple_music article p{
+  font-weight: 600;
+  color: #111111;
+}
+
+
+/* CARD */
+.cards{
+  display: flex;
+}
+.card{
+width: 100vw;
+/* height: calc(100vh - 75px); */
+background: url(../images/wallpaper_.jpeg);
+background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+text-align: center;
+padding-bottom: 50px;
+}
+
+.card div{
+  background: url(../images/album.jpg);
+  background-attachment: fixed;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+/* .card img.homepod_phone{
+  width: 100vw;
+  height: auto;
+  display: block;
+  margin:  10% auto;
+  top : 30%;
+} */
+
+.card img.itunes{
+  width: 3vw;
+  height: auto;
+ display: block;
+ margin: 0 auto;
+ padding: 10px;
+}
+
+.card h3{
+  width: 35vw;
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+}
+
+.card a{
+  margin: 20px;
+  text-decoration: none;
+  color: #42A1EC;
+  font-size: 0.8em;
+}
+
+/* SIRI */
+
+
+.siri_article{
+  width: 80vw;
+  margin: 0px auto;
+  text-align: center;
+ 
+}
+section.siri_music .homepod_siri{
+  width: 20vw;
+  height: auto;
+  position: absolute;
+  top: 50% ;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.siri_title{
+  font-size: 2.5em;
+  width: 35vw;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.siri_text{
+  overflow: hidden;
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-image: url("../images/wallpaper_.jpeg");
+}
+
+.siri_text p{
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 5px;
+}
+
+.siri_text p:nth-child(even){
+  animation: sizeText 5s ease-in infinite;
+}
+
+.background{ 
+  position: relative;
+  width: 98.9vw;
+  height: 100vh;
+  background: linear-gradient(to top, #313131,#f1f1f1 )
+}
+
+
+@keyframes sizeText{
+  0%{
+    font-size: 1.5em;
+  }
+  50%{
+    font-size: 2em;
+  }
+  100%{
+    font-size: 1.5em;
+  }
+}
+
+.siri_daily p{
+  width: 30vw;
+  margin: 50px auto;
+  font-weight: 600;
+  color: #111111;
+}
+
+.card_siri{
+
+  background: url(../images/home_large.jpg);
+  background-size:  cover 100vw;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.card_siri p{
+  font-size: 2em;
+  color: transparent;
+  margin: 2px auto;
+  width: 50vw;
+  height: auto;
+  background: linear-gradient(#eec4ff,#b5f1fa);
+  padding: 50px 50px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-background-clip: text;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #F2F2F2;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'SF Pro Display';
+  font-size: 11px;
+}
+.footerSection {
+  margin: 0px 160px 0px 160px;
+  display: flex;
+}
+.footerActualPage {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #D6D6D6;
+  font-weight: normal;
+  color: #555555;
+
+}
+.footerRamifications {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLogoImage{
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
+}
+.footercallLine {
+  border-bottom: 1px solid #D6D6D6;
+  font-weight: normal;
+  color: #888888;
+}
+.footer_french_flag {
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
+}
+.footerFr {
+  display: flex;
+  align-items: center;
+}
+.footer_copyright{
+  display: flex;
+  justify-content: space-between;
+  font-weight: normal;
+  color: #888888;
+}
+.footerlinks {
+  padding : 0px 8px 0px 8px;
+}
+.footerBorder {
+  border-right: 1px solid #D6D6D6;
+}
+.footerinformBuy , .footerAppleStore , .footerAccount , .footerAboutApple{
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+
+}
+.footerSection a{
+  font-weight:300;
+  text-decoration: none;
+  color: #333333;
+
+}
+.footerSection a:hover {
+  text-decoration: underline;
+}
+.footerRamifications a {
+  padding-bottom: 10px;
+}
+.footerlastInfos{
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
