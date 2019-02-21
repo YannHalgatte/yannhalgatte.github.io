@@ -29,7 +29,7 @@ header#header{
 .container{
   width: 70vw;
   margin: 0 auto;
-  
+
 }
 
 #header .header_navbar{
@@ -41,7 +41,7 @@ header#header{
 #header .header_navbar h2{
   font-size: 12px;
   color: #f1f1f1;
-  padding-left: 10px; 
+  padding-left: 10px;
 }
 
 #header .header_navbar h2:hover{
@@ -124,7 +124,7 @@ img.shopping_bag:hover{
 }
 li{
   list-style: none;
-  font-size : 1.2em; 
+  font-size : 1.2em;
 }
 
 .table_device{
@@ -135,130 +135,85 @@ ul.iphone{
   padding: 0;
   margin: 0 5vw;
 }
-/* h3{
-  margin-top: 50px;
-  text-align: center;
-}
- .landing_Page{
-   display: flex;
-   justify-content: space-between;
-   margin : 0 auto;
-   margin-top: 50px;
- }
- .landing_Page img{
-   width: 40%;
-   height: 40%;
- }
- .Coloris{
-  text-align: center;
+/* FOOTER */
+
+footer {
+  background-color: #F2F2F2;
+  height: auto;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
- }
- .Blanc{
-   margin-left: 100px;
- }
- .Gris{
-   margin-right: 100px;
- }
-Desciption rapide du Home Pod
-.homePodDescription_Left{
+  flex-direction: column;
+  font-family: 'SF Pro Display';
+  font-size: 11px;
+}
+.footerSection {
+  margin: 0px 160px 0px 160px;
+  display: flex;
+}
+.footerActualPage {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #D6D6D6;
+  font-weight: normal;
+  color: #555555;
+
+}
+.footerRamifications {
   display: flex;
   justify-content: space-between;
 }
-.homePodDescription_Left p{
-  height: 250px;
-  width: 400px;
-  margin : auto 0;
-  font-size: 18px;
+
+.footerLogoImage{
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
 }
-.homePodDescription_Left h2{
-  position: relative;
-  left: 349px;
-  bottom: 116px;
+.footercallLine {
+  border-bottom: 1px solid #D6D6D6;
+  font-weight: normal;
+  color: #888888;
 }
-.homePodDescription_Right{
+.footer_french_flag {
+  width: 15px;
+  height: auto;
+  padding-right: 5px;
+}
+.footerFr {
+  display: flex;
+  align-items: center;
+}
+.footer_copyright{
   display: flex;
   justify-content: space-between;
+  font-weight: normal;
+  color: #888888;
 }
-.container_flex{
-  display:flex;
-  flex-flow: row wrap;
+.footerlinks {
+  padding : 0px 8px 0px 8px;
+}
+.footerBorder {
+  border-right: 1px solid #D6D6D6;
+}
+.footerinformBuy , .footerAppleStore , .footerAccount , .footerAboutApple{
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+
+}
+.footerSection a{
+  font-weight:300;
+  text-decoration: none;
+  color: #333333;
+
+}
+.footerSection a:hover {
+  text-decoration: underline;
+}
+.footerRamifications a {
+  padding-bottom: 10px;
+}
+.footerlastInfos{
+  padding-bottom: 10px;
+  display: flex;
   justify-content: flex-start;
-  align-items:center;
 }
- Dimensions et taille 
-.HomePod_Dimensions_Text{
-  margin-left: 328px;
-  height: 100px;
-  width: 500px;
-  margin-top: 150px;
-}
-.HomePod_Dimensions_Images{
-  display: flex;
-  justify-content: space-around;
-  justify-content: flex-end;
-  position: relative;
-  bottom: 130px;
-  left: 175px;
-}
-.Top{
-  margin-left: 70px;
-  width: 260px;
-}
-.HomePod_TechAudio{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 200px;
-}
-.HomePod_TechAudio p{
-  width : 400px;
-  height : 400px;
-  margin-top : 100px;
-}
-.HomePod_TechAudio img{
-  margin-left: 70px;
-}
-.HomePod_TechAudio h2{
-  text-align: center;
-}
-hr{
-  width: 40%;
-  height: 2px;
-  background-color: #000000;
-  border: none;
-  margin-bottom: 50px;
-}
-Autres spécificités
-.Other{
-
-}
-.blockFlex{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction : column;
-  text-align: center;
-  width: 400px;
-  height: 400px;
-  margin-left: 100px;
-}
-.blockFlex1 h3,p{
-  position: relative;
-  left: 70px;
-  margin-left: 50px;
-}
-.blockFlex2 h3,p{
-  text-align: center;
-}
-.blockFlex2 p{
-  left: 10px;
-}
-.blockFlex3 h3,p{
-  position: relative;
-  left: 70px;
-  margin-left: 70px;
-}
-.electricPlug{
-  width: 24px;
-  height: 24px;
-} */
-
