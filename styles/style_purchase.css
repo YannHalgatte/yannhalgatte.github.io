@@ -1,15 +1,11 @@
-
 body{
   margin: 0 auto;
   padding: 0;
   font-family: 'SF Pro Display';
   font-size: 16px;
   color: #444;
-  height: 2000px;
   background-color: white;
-  padding-top: 150px;
-  position: relative;
-
+  margin-top: 50px;
 }
 .logo_group{
   display: flex;
@@ -118,9 +114,7 @@ footer {
   display: flex;
   flex-direction: column;
   font-family: 'SF Pro Display';
-  position: absolute;
-  left:0px;
-  bottom: 0px;
+
   font-size: 11px;
 }
 .footerSection {
@@ -196,52 +190,66 @@ footer {
 }
 
 /* bloc */
-.blocsContainer {
-    margin: 0;
+.bodyPurchase{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-top: 0px;
+}
 
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 36px;
+.bodyPurchaseRight {
+  margin: 0 auto;
+  width:58%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.bodyPurchaseLeft {
+  text-align: center;
 
-  }
-  .bodyBlocs {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    justify-content: flex-end;
-    height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42%;
+  height:auto;
 
 
-  }
-  .white_bloc {
+}
+.bodyBlocs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:auto;
+}
+.white_bloc {
     margin: 0 auto;
-    background-color: white;
 
     color: #313131;
-    height:100%;
+    width: auto;
+    height:auto;
   }
   .black_bloc {
     margin: 0 auto;
-    background-color: #333333;
-    height:100%;
-    color: white;
-  }
 
-.bodyBlocsSquare {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 2.8rem;
-  flex-direction: column;
-      height:100%;
-}
-.blocImages{
+    color: #313131;
+    width: auto;
+    height:auto;
+  }
+  .bodyBlocsSquare {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .blocImages{
   width: 150px;
   height:auto;
-  opacity: 0;
-
+  opacity: 1;
 }
 .blocImages:hover {
   opacity: 1;
@@ -249,13 +257,88 @@ footer {
   transition-property: transform;
   transition-duration: 1s;
 }
-.salesPromotion{
-  position: absolute;
-  top: 800px;
+.purchaseHomePod {
+  padding-bottom: 25px;
+  border-bottom: 2px solid #F2F2F2;
   text-align: center;
-  font-size: 2.0rem;
+  font-size: 2.4rem;
 }
-.buyAppleMusic{
-  width: 150px;
-  height:auto;
+.linksColor{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.linksColorChoice {
+  background-color: white;
+  height: 150px;
+  width:150px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+          text-decoration: none;
+            color: #313131;
+    box-shadow: 3px 3px #f2f2f2;
+}
+.linksColorChoice:hover{
+  transform: scale(1.2);
+  transition-property: transform;
+  transition-delay: 0.5s ease-in 0s;
+}
+.linkGrey {
+
+}
+.chooseColor{
+  margin-top: 0;
+}
+.priceAndBasket{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.price{
+  color: black;
+}
+.buyBasket{
+  margin-right: 50px;
+  background-image: linear-gradient(#42A1EC , #0070C9);
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+}
+.priceOffer{
+  text-decoration: none;
+  color: #0070C9;
+}
+.appleCareRight{
+  border-left: 2px solid #F2F2F2;
+  display: flex;
+  flex-direction: row;
+
+  width:50%;
+}
+.appleLogoRed{
+  width:auto;
+  height:15px;
+  display: flex;
+  justify-content: flex-start;
+}
+.appleCarePara{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 25px;
+}
+.addAppleCare {
+  display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px #F2F2F2;
+  align-items: center;
+  text-decoration: none;
+  color: #313131;
 }
